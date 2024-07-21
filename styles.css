@@ -346,12 +346,24 @@ form button:hover {
 }
 
 
-
+/* Estilos generales */
 body {
     color: black;
     text-align: center;
     font-family: Arial, sans-serif;
     background-color: rgb(228, 219, 220);
+    margin: 0;
+    padding: 0;
+    margin: 0 auto; /* Ajustar el margen del body */
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: 70px;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .logo {
@@ -360,8 +372,10 @@ body {
 }
 
 .navbar {
-    background-color: rgb(77, 5, 77);
+    background-color: rgb(77, 5, 77); 
     padding: 10px 20px;
+    position: relative;
+    margin: 0 auto; /* Ajustar el margen del navbar */
 }
 
 .navbar ul {
@@ -369,11 +383,11 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Alinea los elementos del menú horizontalmente */
+    justify-content: center;
 }
 
 .navbar ul li {
-    margin: 0 10px; /* Espacio entre los elementos del menú */
+    margin: 0 10px;
 }
 
 .navbar ul li a {
@@ -385,103 +399,55 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: rgb(211, 208, 19); /* Cambia el color al pasar el mouse */
-}
-
-/* Estilo para pantallas pequeñas */
-@media only screen and (max-width: 600px) {
-    .navbar ul {
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        align-items: center; /* Centra los elementos en el eje vertical */
-    }
-
-    .navbar ul li {
-        margin: 5px 0; /* Reduce el margen entre los elementos del menú */
-    }
-
-    .navbar ul li a {
-        padding: 10px 15px; /* Ajusta el padding para mejor visualización en móviles */
-        font-size: 16px; /* Ajusta el tamaño de la fuente */
-    }
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(228, 219, 220);
-}
-
-.navbar {
-    background-color: rgb(77, 5, 77); 
-    padding: 10px 20px;
-    position: relative;
-}
-
-.navbar .menu-icon {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.nav-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-list li {
-    margin: 0 10px;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 10px;
-}
-
-.nav-list li a:hover {
     color: rgb(211, 208, 19);
 }
 
-/* Estilos para móviles */
-@media (max-width: 768px) {
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        background-color: rgb(77, 5, 77);
-    }
+footer {
+    background-color: rgb(77, 5, 77);
+    color: white;
+    padding: 20px 0;
+    margin: 0 auto; /* Ajustar el margen del footer */
+}
 
-    #menu-toggle:checked + .menu-icon + .nav-list {
-        display: flex;
-    }
+footer .footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .menu-icon {
-        display: block;
-    }
-    
-    #menu-toggle {
-        display: none;
-    }
+footer .footerBottom {
+    text-align: center;
+    margin-top: 10px;
+}
 
-    .nav-list li {
-        margin: 0;
-    }
+footer .socialIcons a {
+    color: white;
+    margin: 0 10px;
+}
 
-    .nav-list li a {
-        padding: 15px;
-        border-top: 1px solid #ccc;
-    }
+footer .socialIcons a:hover {
+    color: rgb(211, 208, 19);
+}
+
+.Foto1, .Foto2, .Foto3 {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px auto; /* Ajustar el margen de las imágenes */
+}
+
+.dif, .dif2, .caja1, .caja2, .caja3, .caja4, .caja5 {
+    margin: 20px auto; /* Ajustar el margen de las cajas */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+h2, h3 {
+    color: rgb(77, 5, 77);
+}
+
+p {
+    text-align: justify;
 }
